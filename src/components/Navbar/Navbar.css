@@ -1,0 +1,47 @@
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: red; */
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 1210px;
+    padding: 1.75rem;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+}
+
+.nav-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+
+.nav-item{
+    margin-left: 2rem;
+    font-weight: 500;
+    font-size: .9375rem;
+    line-height: 1.125rem;
+    color: #293066;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+}
+
+.navbar-btn{
+    padding: 0.75rem 1.875rem;
+    background-color: #018cf1;
+    border-radius: 1.7188rem;
+    color: #fff;
+    font-size: .9rem;
+}
+
+
+.login-icon{
+    margin-right: 0.4rem;
+}
