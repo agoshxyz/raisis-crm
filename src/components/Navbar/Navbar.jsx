@@ -7,11 +7,11 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="nav-container">
-        <div><img src={logo} width={195} height={51.82} alt="logo-navbar" /></div>
+        <img src={logo} width={195} height={51.82} alt="logo-navbar" />
         <div className="nav-links">
           <div>
             {" "}
-            <Link exact to="/" className="nav-item">
+            <Link exact to="/" className="nav-item-home">
               Acasă
             </Link>
           </div>

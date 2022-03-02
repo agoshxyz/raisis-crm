@@ -1,16 +1,19 @@
 .nav-container {
+    width: 100%;
+    position: fixed;
+    /* height: 3.3rem; */
+    max-width: 1210px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    /* background-color: red; */
+    background-color: #fff;
     left: 50%;
     transform: translateX(-50%);
-    max-width: 1210px;
-    padding: 1.75rem;
+    padding: 1.75rem 0 1.75rem 0;
     position: fixed;
-    width: 100%;
     top: 0px;
+    /* z-index: 9999; */
 }
 
 .nav-links{
@@ -19,7 +22,6 @@
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
-
 }
 
 
