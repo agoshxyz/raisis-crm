@@ -33,18 +33,37 @@
 .discoverSlideBox {
   display: flex;
   margin-top: 2.3rem;
+
 }
 .discoverSliderButton {
-  font-weight: 500;
-  color: #fff;
+  /*
+
   background-color: #018cf1;
-  font-size: 0.8rem;
+
   border-radius: 27.5px;
   padding: 1.25rem 2.61rem 1.25rem 4.3rem;
-  line-height: 1;
-  letter-spacing: 1px;
-  width: 22rem;
+
+
+  width: 22rem; */
   position: relative;
+}
+
+.discoverSliderButtonText{
+  letter-spacing: 1px;
+  line-height: 1;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #fff;
+  margin-top: 14px;
+  margin-left: 70px;
+  position: absolute;
+  z-index: 1;
+  vertical-align: middle;
+}
+.arrowIcon{
+  margin-left: 9px;
+  margin-top: 4px;
 }
 
 .discoverRoundStrokeButton {
@@ -395,4 +414,11 @@ label[for="checkbox"]{
 .pricingCard{
   display: flex;
   justify-content: center;
+}
+
+
+
+.sliderInput{
+  background_color: red;
+
 }

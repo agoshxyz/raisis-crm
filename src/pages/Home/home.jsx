@@ -1,6 +1,6 @@
-//packages
-// import React from "react";
-
+import React, { useState } from "react";
+import Slider from "react-input-slider";
+import { Link, useNavigate } from "react-router-dom";
 //styles
 import styles from "./Home.module.css";
 
@@ -15,8 +15,7 @@ import checkmark from "../../assets/images/checkmark.svg";
 import heroImage from "../../assets/images/hero-image.png";
 import AppStore from "../../assets/images/AppStore.png";
 import GooglePlay from "../../assets/images/GooglePlay.png";
-import sliderButton from "../../assets/images/RoundLogo_Button.svg";
-
+import Arrow from '../../assets/images/arrow.svg'
 
 //images Benefits
 import Benefits1 from "../../assets/images/Benefits/Benefits1.png";
@@ -34,9 +33,12 @@ import BenefitsCard4 from "../../assets/images/BenefitsCard/BenefitsCard4.png";
 import BenefitsCard5 from "../../assets/images/BenefitsCard/BenefitsCard5.png";
 import BenefitsCard6 from "../../assets/images/BenefitsCard/BenefitsCard6.png";
 
-
-
 const Home = () => {
+  let navigate = useNavigate()
+  const [state, setState] = useState({x:9})
+  const handleDragEnd = () => {
+    navigate('/sign-up', {replace: true})
+  }
   return (
     <>
       <div className={styles.discover}>
@@ -50,18 +52,61 @@ const Home = () => {
             RaisisCRM lets you handle all your work in one place.
           </div>
           <div className={styles.discoverSlideBox}>
-            <img
-              src={sliderButton}
-              className={styles.discoverSliderRoundedButton}
-              alt="slider button"
-            ></img>
-            <div className={styles.discoverSliderButton}>
-              Începe trial-ul gratuit de 14 zile
+          <div className={styles.discoverSliderButton}>
+          <div className={styles.discoverSliderButtonText} >
+              Începe trial-ul gratuit de 14 zile <img src={Arrow} alt="Arrow" className={styles.arrowIcon}/>
             </div>
+            <Slider
+            styles={{
+              track: {
+                backgroundColor: '#018CF1',
+                color: '#fff',
+                fontSize: '0.8rem',
+                borderRadius: '27.5px',
+                width: '22rem',
+                height: '55px',
+                padding: '1.25rem 2.61rem 1.25rem 4.3rem',
+                lineHeight: 1,
+                letterSpacing: '1px'
+              },
+              active: {
+                backgroundColor: 'rgba(0,0,0,0.5)',
+                visibility: 'hidden'
+              },
+              thumb: {
+                backgroundImage: `url("./img/round.svg")`,
+                backgroundSize: '110px 60px',
+                backgroundRepeat: 'no-repeat',
+                backgroundPosition: 'center top',
+                width: 50,
+                height: 50,
+                zIndex: 100
+
+              },
+              disabled: {
+                opacity: 1
+              }
+            }}
+            axis='x'
+            x={state.x}
+            xmin={0}
+            xmax = {100}
+            onChange={setState}
+            onDragEnd={handleDragEnd}
+            ></Slider>
+
+          </div>
+          {/* <img
+                src={sliderButton}
+                className={styles.discoverSliderRoundedButton}
+                alt="slider button"
+              /> */}
+
             <div className={styles.discoverRoundStrokeButton}>
               Discută cu noi
             </div>
           </div>
+
           <div className={styles.featureContainer}>
             <div className={styles.discoverCheckmark}>
               <img
