@@ -1,0 +1,64 @@
+.benefits {
+  /* max-width: 1210px; */
+  padding-top: 6.68rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-left: 6rem;
+  width: 100%;
+  margin-bottom: 8rem;
+}
+
+.benefitsText {
+  width: 515px;
+  margin-left: -3rem;
+}
+.benefitsImage {
+  width: 740px;
+  transform: translate(8.5%, 3%);
+}
+.benefitsTitle {
+  padding-top: 6.3rem;
+  color: #018cf1;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 0.36px;
+}
+
+.benefitsSubTitle {
+  font-size: 45px;
+  font-weight: 700;
+  color: #293066;
+  line-height: 54.86px;
+  margin-top: 1.59rem;
+}
+.benefitsDescription {
+  font-weight: 400;
+  margin-top: 1.4rem;
+  font-size: 18px;
+  letter-spacing: 0.1px;
+  line-height: 30px;
+  color: #7b88a8;
+  width: 99.6%;
+}
+
+.featureContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.6rem;
+}
+.discoverCheckmark {
+  color: #293066;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  margin-right: 1.3rem;
+  letter-spacing: 0.01px;
+}
+
+.checkmark {
+  margin-right: 0.7rem;
+}

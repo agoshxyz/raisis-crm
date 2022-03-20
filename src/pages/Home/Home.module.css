@@ -1,0 +1,398 @@
+.discover {
+  max-width: 1210px;
+  padding-top: 14.45rem;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.discoverTitle {
+  font-weight: 800;
+  color: #018cf1;
+  font-size: 18px;
+}
+
+.discoverSubTitle {
+  font-size: 65px;
+  font-weight: bold;
+  color: #293066;
+  margin-top: 1.48rem;
+  width: 671px;
+}
+
+.discoverDescription {
+  font-size: 1.15rem;
+  color: #7b88a8;
+  margin-top: 1.65rem;
+  text-align: start;
+  letter-spacing: 0.01px;
+  line-height: 28.9px;
+  width: 98%;
+}
+
+.discoverSlideBox {
+  display: flex;
+  margin-top: 2.3rem;
+}
+.discoverSliderButton {
+  font-weight: 500;
+  color: #fff;
+  background-color: #018cf1;
+  font-size: 0.8rem;
+  border-radius: 27.5px;
+  padding: 1.25rem 2.61rem 1.25rem 4.3rem;
+  line-height: 1;
+  letter-spacing: 1px;
+  width: 22rem;
+  position: relative;
+}
+
+.discoverRoundStrokeButton {
+  margin-left: 1.5rem;
+  padding: 0.9rem 2rem;
+  font-size: 0.9rem;
+  font-weight: 400;
+  cursor: pointer;
+  border: 2.03704px solid #e5e7ee;
+  border-radius: 27.5px;
+}
+
+.discoverSliderRoundedButton{
+  position: absolute;
+  z-index: 1;
+  margin-top: -0.2rem;
+  margin-left: -.3rem;
+}
+
+.featureContainer {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.discoverCheckmark {
+  color: #293066;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 400;
+  margin-top: 2.25rem;
+  margin-right: 1.3rem;
+  letter-spacing: 0.15px;
+}
+.discoverCheckmark:last-child {
+  margin-top: 0.8rem;
+}
+
+.checkmark{
+  margin-right: 0.35rem;
+}
+
+.discoverImage {
+  transform: translate(-6%, -2.5%);
+  margin-top: -3.2rem;
+
+}
+
+.partnersSection {
+  margin-top: 16.9rem;
+  margin-bottom: 7.85rem;
+}
+
+.logoTitle {
+  font-size: 35px;
+  font-weight: 700;
+  color: #293066;
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.imgLogos {
+  margin-top: 4.6rem;
+}
+
+.logoImg1 {
+  display: flex;
+  justify-content: center;
+}
+.logoImg2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 2.7rem;
+}
+
+.logoImgSvg {
+  width: 150px;
+  height: 62px;
+  background-color: #c2cbd8;
+  margin-left: 2.5rem;
+  margin-right: 1.5rem;
+}
+.BenefitsContainerTitle{
+  font-size: 35px;
+  font-weight: 700;
+  color: #293066;
+  text-align: center;
+  width: 100%;
+  margin-top: 11.5rem;
+}
+.benefitsContainer{
+  width: 67%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonalsSection{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 24rem;
+  background-color: #FFFCF8;
+  width: 100%;
+  height: 900px;
+}
+
+.testimonalsTitle{
+  margin-top: 8rem;
+  font-size: 15px;
+  font-weight: 800;
+  color:#7B88A8;
+  letter-spacing: 0.3px;
+}
+.testimonalsSubTitle{
+  margin-top: 1.5rem;
+  font-size: 35px;
+  font-weight: 700;
+  color: #293066;
+  width: 30%;
+  text-align: center;
+}
+
+.testimonalsContainer{
+  display: flex;
+  justify-content: center;
+}
+
+.mobileSection{
+  margin-top: 13.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.mobileTitle{
+  font-size: 15px;
+  font-weight: 800;
+  text-align: center;
+  color: #018CF1;
+}
+
+
+.mobileSubTitle{
+  margin-top: 1.5rem;
+  font-size: 45px;
+  font-weight: 700;
+  justify-content: center;
+  text-align: center;
+  width: 55%;
+  color: #293066;
+}
+
+
+.mobileDescription{
+  margin-top: 1.7rem;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+  width: 55%;
+  text-align: center;
+}
+
+.mobileStores{
+  display: flex;
+  flex-direction: row;
+  margin-top: 5rem;
+}
+
+.mobileAppStore{
+  margin-top: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mobileGooglePlay{
+  margin-top: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mobileSeperator{
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mobileSeperatorLeft{
+  width: 0px;
+  height: 71px;
+  border: 1px solid #7B88A8;
+}
+
+.mobileSeperatorText{
+  margin-top: 0.9rem;
+  margin-bottom: 0.9rem;
+}
+.mobileSeperatorRight{
+  width: 0px;
+  height: 71px;
+  border: 1px solid #7B88A8;
+}
+
+.mobileAppStoreDescription{
+  font-size: 18px;
+  font-weight: 400;
+  color: #7B88A8;
+  margin-top: 0.8rem;
+  width: 70%;
+  text-align: center;
+}
+
+.mobileGooglePlayDescription{
+  font-size: 18px;
+  font-weight: 400;
+  color: #7B88A8;
+  margin-top: 0.8rem;
+  width: 70%;
+  text-align: center;
+}
+
+
+.faq{
+  margin-top: 14rem;;
+  background-color: #293066;
+  width: 100%;
+  height: 690px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.faqTitle{
+  margin-top: 5.9rem;
+  font-size: 15px;
+  font-weight: 800;
+  color: #018CF1;
+}
+
+.faqSubTitle{
+  margin-top: 1.5rem;
+  font-size: 45px;
+  font-weight: 700;
+  color: #FFF;
+  width: 30%;
+}
+
+.faqBox{
+
+}
+
+.faqBoxElement{
+
+}
+
+
+
+.pricingCaption{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 6.6rem;
+}
+
+.pricingTitle{
+  font-size: 15px;
+  font-weight: 800;
+  color: #018CF1;
+}
+
+.pricingSubTitle{
+  font-size: 45px;
+  font-weight: 700;
+  color: #293066;
+  width: 65%;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.pricingWarning{
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 1.7rem;
+  letter-spacing: 0.3px;
+  color: #7B88A8;
+}
+
+
+.pricingSection{
+  margin-top: 5em;
+  letter-spacing: 1px;
+}
+
+label[for="checkbox"]{
+  display: block;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.checkboxToggler{
+  display: inline-block;
+  position: relative;
+  width: 340px;
+  height: 55px;
+  background-color: #FFF;
+  border-radius: 27.5px;
+  border: 2px solid #e5e7ee;
+
+}
+
+
+.checkboxToggler .toggler{
+  width: 50%;
+  height: 100%;
+  background-color: #018CF1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  transform: left 150ms linear;
+}
+
+.checkboxToggler input{
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkboxToggler input:checked + .toggler{
+  left: 50%;
+}
+
+
+.pricingCard{
+  display: flex;
+  justify-content: center;
+}

@@ -1,49 +1,46 @@
 .nav-container {
-    width: 100%;
-    position: fixed;
-    /* height: 3.3rem; */
-    max-width: 1210px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #fff;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 1.75rem 0 1.75rem 0;
-    position: fixed;
-    top: 0px;
-    /* z-index: 9999; */
+  width: 100%;
+  position: fixed;
+  max-width: 1210px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 1.75rem 0 1.75rem 0;
+  position: fixed;
+  top: 0px;
+  z-index: 9999;
+  /* height: 3.3rem; */
 }
 
-.nav-links{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    cursor: pointer;
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
 }
 
-
-.nav-item{
-    margin-left: 2rem;
-    font-weight: 500;
-    font-size: .9375rem;
-    line-height: 1.125rem;
-    color: #293066;
-    text-decoration: none;
-    font-family: "Montserrat", sans-serif;
+.nav-item {
+  margin-left: 1.999rem;
+  font-size: 15px;
+  font-weight: 400;
+  color: #293066;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0.03px;
 }
 
-.navbar-btn{
-    padding: 0.75rem 1.875rem;
-    background-color: #018cf1;
-    border-radius: 1.7188rem;
-    color: #fff;
-    font-size: .9rem;
+.navbar-btn {
+  padding: 0.75rem 1.875rem;
+  background-color: #018cf1;
+  border-radius: 1.7188rem;
+  color: #fff;
 }
 
-
-.login-icon{
-    margin-right: 0.4rem;
+.login-icon {
+  margin-right: 0.7rem;
 }

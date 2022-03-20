@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../../images/logo.svg";
-import loginIcon from '../../images/login-icon.svg'
+import logo from "../../assets/images/logo.svg";
+import loginIcon from "../../assets/images/login-icon.svg";
 import "./Navbar.css";
 const Navbar = () => {
   return (
@@ -16,7 +16,7 @@ const Navbar = () => {
             </Link>
           </div>
 
-          <div >
+          <div>
             {" "}
             <Link exact to="/pricing" className="nav-item">
               Preț
@@ -31,10 +31,9 @@ const Navbar = () => {
           </div>
 
           <div>
-
             <Link exact to="/login" className="nav-item">
-            <img src={loginIcon} alt="Login icon" className="login-icon"/>
-              Intră in Cont
+              <img src={loginIcon} alt="Login icon" className="login-icon" />
+              Intră in cont
             </Link>
           </div>
 

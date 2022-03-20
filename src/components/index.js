@@ -1,12 +1,6 @@
 //component
 export {default as Navbar} from './Navbar/Navbar'
+export {default as Benefits} from './Benefits/Benefits'
+export {default as BenefitsReverse} from './BenefitsReverse/BenefitsReverse'
 
 
-
-//pages
-export {default as Contact} from './pages/Contact'
-export {default as ErrorPage} from './pages/ErrorPage'
-export {default as Home} from './pages/Home/Home'
-export {default as Login} from './pages/Login'
-export {default as Price} from './pages/Price'
-export {default as Signup} from './pages/Signup'

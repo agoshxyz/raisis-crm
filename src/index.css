@@ -7,12 +7,12 @@
   margin: 0;
   padding: 0;
   outline: 1px solid black;
+
 }
 
 
 html,
 body {
   font-family: "Montserrat", sans-serif;
-  /* overflow-x: hidden; */
-  /* To avoid horizontal x-axis scrolling */
+  overflow-x: hidden;
 }
