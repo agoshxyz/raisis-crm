@@ -1,3 +1,13 @@
+.navbar{
+  width: 100%;
+  /* max-width: 1600px; */
+  height: 107.817px;
+  background-color: #fff;
+  top: 0px;
+  z-index: 9999;
+  position: fixed;
+}
+
 .nav-container {
   width: 100%;
   position: fixed;

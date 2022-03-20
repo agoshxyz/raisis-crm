@@ -36,15 +36,6 @@
 
 }
 .discoverSliderButton {
-  /*
-
-  background-color: #018cf1;
-
-  border-radius: 27.5px;
-  padding: 1.25rem 2.61rem 1.25rem 4.3rem;
-
-
-  width: 22rem; */
   position: relative;
 }
 
@@ -67,10 +58,14 @@
 }
 
 .discoverRoundStrokeButton {
-  margin-left: 1.5rem;
+  color: #293066;
+  margin-left: 1.25rem;
+  height:55px;
+  width: 175px;
   padding: 0.9rem 2rem;
   font-size: 0.9rem;
   font-weight: 400;
+  letter-spacing: 0.25px;
   cursor: pointer;
   border: 2.03704px solid #e5e7ee;
   border-radius: 27.5px;
@@ -153,7 +148,7 @@
   color: #293066;
   text-align: center;
   width: 100%;
-  margin-top: 11.5rem;
+  /* margin-top:rem; */
 }
 .benefitsContainer{
   width: 67%;
@@ -167,7 +162,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 24rem;
+  margin-top: 10rem;
   background-color: #FFFCF8;
   width: 100%;
   height: 900px;
@@ -386,11 +381,12 @@ label[for="checkbox"]{
   width: 50%;
   height: 100%;
   background-color: #018CF1;
+  border-radius: 27.5px;
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
-  z-index: -1;
+  z-index: 1;
   transform: left 150ms linear;
 }
 
@@ -417,8 +413,17 @@ label[for="checkbox"]{
 }
 
 
-
-.sliderInput{
-  background_color: red;
-
+@media (min-width: 961px) and (max-width: 1280px){
+  .discoverSubTitle{
+    background-color: red;
+  }
 }
+
+
+@media (min-width: 320px) and (max-width: 960px){
+  .discoverSubTitle{
+    background-color: blue;
+  }
+}
+
+

@@ -33,6 +33,11 @@ import BenefitsCard4 from "../../assets/images/BenefitsCard/BenefitsCard4.png";
 import BenefitsCard5 from "../../assets/images/BenefitsCard/BenefitsCard5.png";
 import BenefitsCard6 from "../../assets/images/BenefitsCard/BenefitsCard6.png";
 
+//images TestimonalsInfoBox
+import Testimonals1 from '../../assets/images/Testimonals/Testimonals1.png'
+import Testimonals2 from '../../assets/images/Testimonals/Testimonals2.png'
+import Testimonals3 from '../../assets/images/Testimonals/Testimonals3.png'
+
 const Home = () => {
   let navigate = useNavigate()
   const [state, setState] = useState({x:9})
@@ -228,9 +233,18 @@ const Home = () => {
           What team leaders have to say about RaisisCRM
         </div>
         <div className={styles.testimonalsContainer}>
-          <TestimonalsInfoBox />
-          <TestimonalsInfoBox />
-          <TestimonalsInfoBox />
+          <TestimonalsInfoBox title="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Quis ipsum
+        suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan
+        lacus vel facilisis." authorName="Nume Prenume" authorJob="Founder of Business Name" image={Testimonals1}/>
+          <TestimonalsInfoBox title="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Quis ipsum
+        suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan
+        lacus vel facilisis." authorName="Nume Prenume" authorJob="Founder of Business Name" image={Testimonals2} />
+          <TestimonalsInfoBox title="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Quis ipsum
+        suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan
+        lacus vel facilisis." authorName="Nume Prenume" authorJob="Founder of Business Name" image={Testimonals3} />
         </div>
       </div>
 
