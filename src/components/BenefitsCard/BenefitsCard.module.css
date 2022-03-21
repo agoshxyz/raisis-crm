@@ -37,3 +37,9 @@
     margin-top: 1.2rem;
     text-align: center;
 }
+
+@media (min-width: 961px) and (max-width: 1280px) {
+    .benefitImage{
+        width: 590px;
+    }
+}
