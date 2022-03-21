@@ -3,12 +3,13 @@
     flex-direction: column;
     justify-content:center;
     align-items: center;
-    width: 24%;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    max-width: 1410px;
+    width: 32%;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-top: 4.5rem;
 }
 .benefitImage{
-    margin-top: 4rem;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
@@ -16,7 +17,8 @@
 }
 
 .benefitTitle{
-    margin-top: 3.6rem;
+    width: 100%;
+    margin-top: 3.2rem;
     font-size: 30px;
     font-weight: 700;
     align-items: center;
@@ -26,6 +28,7 @@
 }
 
 .benefitDescription{
+    width: 70%;
     font-size: 18px;
     font-weight: 400;
     /* letter-spacing: 0.01px; */
@@ -33,5 +36,4 @@
     color: #7B88A8;
     margin-top: 1.2rem;
     text-align: center;
-    width: 74%;
 }

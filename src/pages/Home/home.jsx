@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Slider from "react-input-slider";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 //styles
 import styles from "./Home.module.css";
 
@@ -15,11 +15,15 @@ import checkmark from "../../assets/images/checkmark.svg";
 import heroImage from "../../assets/images/hero-image.png";
 import AppStore from "../../assets/images/AppStore.png";
 import GooglePlay from "../../assets/images/GooglePlay.png";
-import Arrow from '../../assets/images/arrow.svg'
+import Arrow from "../../assets/images/arrow.svg";
+import Plus from "../../assets/images/plus.svg";
+import QuestionsCircle from "../../assets/images/questionsCircle.png";
+import Save_tag from '../../assets/images/save_tag.png'
 
 //images Benefits
 import Benefits1 from "../../assets/images/Benefits/Benefits1.png";
 import Benefits2 from "../../assets/images/Benefits/Benefits2.png";
+import Benefits3 from "../../assets/images/Benefits/Benefits3.png";
 
 //images BenefitsReverse
 import BenefitsReverse1 from "../../assets/images/BenefitsReverse/BenefitsReverse1.png";
@@ -34,15 +38,23 @@ import BenefitsCard5 from "../../assets/images/BenefitsCard/BenefitsCard5.png";
 import BenefitsCard6 from "../../assets/images/BenefitsCard/BenefitsCard6.png";
 
 //images TestimonalsInfoBox
-import Testimonals1 from '../../assets/images/Testimonals/Testimonals1.png'
-import Testimonals2 from '../../assets/images/Testimonals/Testimonals2.png'
-import Testimonals3 from '../../assets/images/Testimonals/Testimonals3.png'
+import Testimonals1 from "../../assets/images/Testimonals/Testimonals1.png";
+import Testimonals2 from "../../assets/images/Testimonals/Testimonals2.png";
+import Testimonals3 from "../../assets/images/Testimonals/Testimonals3.png";
 
 const Home = () => {
-  let navigate = useNavigate()
-  const [state, setState] = useState({x:9})
+  let navigate = useNavigate();
+  const [inputState, setInputState] = useState({ x: 9 });
+  const [isActive, setActive] = useState(false);
+  const toggleClass = () => {
+    setActive(!isActive)
+  }
   const handleDragEnd = () => {
-    navigate('/sign-up', {replace: true})
+    navigate("/sign-up", { replace: true });
+  };
+
+  const handleButtonClick = () => {
+    navigate("/contact", {replace: true})
   }
   return (
     <>
@@ -57,58 +69,51 @@ const Home = () => {
             RaisisCRM lets you handle all your work in one place.
           </div>
           <div className={styles.discoverSlideBox}>
-          <div className={styles.discoverSliderButton}>
-          <div className={styles.discoverSliderButtonText} >
-              Începe trial-ul gratuit de 14 zile <img src={Arrow} alt="Arrow" className={styles.arrowIcon}/>
+            <div className={styles.discoverSliderButton}>
+              <div className={styles.discoverSliderButtonText}>
+                Începe trial-ul gratuit de 14 zile{" "}
+                <img src={Arrow} alt="Arrow" className={styles.arrowIcon} />
+              </div>
+              <Slider
+                styles={{
+                  track: {
+                    backgroundColor: "#018CF1",
+                    color: "#fff",
+                    fontSize: "0.8rem",
+                    borderRadius: "27.5px",
+                    width: "22rem",
+                    height: "55px",
+                    padding: "1.25rem 2.61rem 1.25rem 4.3rem",
+                    lineHeight: 1,
+                    letterSpacing: "1px",
+                  },
+                  active: {
+                    backgroundColor: "rgba(0,0,0,0.5)",
+                    visibility: "hidden",
+                  },
+                  thumb: {
+                    backgroundImage: `url("./img/round.svg")`,
+                    backgroundSize: "110px 60px",
+                    backgroundRepeat: "no-repeat",
+                    backgroundPosition: "center top",
+                    width: 50,
+                    height: 50,
+                    zIndex: 100,
+                  },
+                  disabled: {
+                    opacity: 1,
+                  },
+                }}
+                axis="x"
+                x={inputState.x}
+                xmin={0}
+                xmax={100}
+                onChange={setInputState}
+                onDragEnd={handleDragEnd}
+              ></Slider>
             </div>
-            <Slider
-            styles={{
-              track: {
-                backgroundColor: '#018CF1',
-                color: '#fff',
-                fontSize: '0.8rem',
-                borderRadius: '27.5px',
-                width: '22rem',
-                height: '55px',
-                padding: '1.25rem 2.61rem 1.25rem 4.3rem',
-                lineHeight: 1,
-                letterSpacing: '1px'
-              },
-              active: {
-                backgroundColor: 'rgba(0,0,0,0.5)',
-                visibility: 'hidden'
-              },
-              thumb: {
-                backgroundImage: `url("./img/round.svg")`,
-                backgroundSize: '110px 60px',
-                backgroundRepeat: 'no-repeat',
-                backgroundPosition: 'center top',
-                width: 50,
-                height: 50,
-                zIndex: 100
-
-              },
-              disabled: {
-                opacity: 1
-              }
-            }}
-            axis='x'
-            x={state.x}
-            xmin={0}
-            xmax = {100}
-            onChange={setState}
-            onDragEnd={handleDragEnd}
-            ></Slider>
-
-          </div>
-          {/* <img
-                src={sliderButton}
-                className={styles.discoverSliderRoundedButton}
-                alt="slider button"
-              /> */}
-
             <div className={styles.discoverRoundStrokeButton}>
-              Discută cu noi
+              <span>Discută cu noi</span>
             </div>
           </div>
 
@@ -164,8 +169,8 @@ const Home = () => {
           </div>
         </div>
       </div>
+
       <Benefits
-        classname={styles.benefitsMarginTop}
         title="Designed to keep you selling"
         subTitle="Lorem ipsum dolor sit ametur titlus CRM"
         description="Manage your projects and your talent in a single system, resulting in
@@ -233,18 +238,33 @@ const Home = () => {
           What team leaders have to say about RaisisCRM
         </div>
         <div className={styles.testimonalsContainer}>
-          <TestimonalsInfoBox title="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          <TestimonalsInfoBox
+            title="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Quis ipsum
         suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan
-        lacus vel facilisis." authorName="Nume Prenume" authorJob="Founder of Business Name" image={Testimonals1}/>
-          <TestimonalsInfoBox title="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        lacus vel facilisis."
+            authorName="Nume Prenume"
+            authorJob="Founder of Business Name"
+            image={Testimonals1}
+          />
+          <TestimonalsInfoBox
+            title="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Quis ipsum
         suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan
-        lacus vel facilisis." authorName="Nume Prenume" authorJob="Founder of Business Name" image={Testimonals2} />
-          <TestimonalsInfoBox title="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        lacus vel facilisis."
+            authorName="Nume Prenume"
+            authorJob="Founder of Business Name"
+            image={Testimonals2}
+          />
+          <TestimonalsInfoBox
+            title="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Quis ipsum
         suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan
-        lacus vel facilisis." authorName="Nume Prenume" authorJob="Founder of Business Name" image={Testimonals3} />
+        lacus vel facilisis."
+            authorName="Nume Prenume"
+            authorJob="Founder of Business Name"
+            image={Testimonals3}
+          />
         </div>
       </div>
 
@@ -279,22 +299,67 @@ const Home = () => {
       </div>
 
       <div className={styles.faq}>
-        <div className={styles.faqTitle}>LOREM IPSUM DOLOR SIT AMET</div>
-        <div className={styles.faqSubTitle}>
-          Lorem ipsum dolor sit ametur features
+        <div className={styles.faqTitles}>
+          <div className={styles.faqTitle}>LOREM IPSUM DOLOR SIT AMET</div>
+          <div className={styles.faqSubTitle}>
+            Lorem ipsum dolor sit ametur features
+          </div>
         </div>
-        <div className={styles.faqElements}>
-          <div className={styles.faqBox}>
-            <div className={styles.faqBoxElement}>
+
+        <div className={styles.faqBox}>
+          <div className={styles.faqQuestionsGroup}>
+            <div className={styles.faqQuestionElement}>
               Lorem ipsum dolor sit ame
+              <img src={Plus} className={styles.faqQuestionPlusIcon} />
+            </div>
+            <div className={styles.faqQuestionElement}>
+              Lorem ipsum dolor sit ame
+              <img src={Plus} className={styles.faqQuestionPlusIcon} />
+            </div>
+            <div className={styles.faqQuestionElement}>
+              Lorem ipsum dolor sit ame
+              <img src={Plus} className={styles.faqQuestionPlusIcon} />
+            </div>
+            <div className={styles.faqQuestionElement}>
+              Lorem ipsum dolor sit ame
+              <img src={Plus} className={styles.faqQuestionPlusIcon} />
+            </div>
+            <div className={styles.faqQuestionElement}>
+              Lorem ipsum dolor sit ame
+              <img src={Plus} className={styles.faqQuestionPlusIcon} />
+            </div>
+            <div className={styles.faqQuestionElement}>
+              Lorem ipsum dolor sit ame
+              <img src={Plus} className={styles.faqQuestionPlusIcon} />
+            </div>
+            <div className={styles.faqQuestionElement}>
+              Lorem ipsum dolor sit ame
+              <img src={Plus} className={styles.faqQuestionPlusIcon} />
+            </div>
+            <div className={styles.faqQuestionElement}>
+              Lorem ipsum dolor sit ame
+              <img src={Plus} className={styles.faqQuestionPlusIcon} />
             </div>
           </div>
-          <div></div>
-          <div></div>
+
+          <div className={styles.faqQuestionBox}>
+            <img src={QuestionsCircle} width={48} height={48} />
+            <div className={styles.faqQuestionBoxText}>
+              Got questions about RaisisCRM benefits? We’re here to help.
+            </div>
+            <div className={styles.faqQuestionBoXButton} onClick={handleButtonClick}>
+            Ia legătura cu noi
+            </div>
+          </div>
         </div>
       </div>
 
-      <Benefits />
+      <Benefits
+        title="Connect your favorite tools"
+        subTitle="Team up with your favorite apps "
+        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida."
+        image={Benefits3}
+      />
 
       <div className={styles.pricingCaption}>
         <div className={styles.pricingTitle}>STREAMLINE YOUR PROCESSES</div>
@@ -306,30 +371,41 @@ const Home = () => {
         </div>
       </div>
 
-      <div className={styles.pricingSection}>
-        <label className={styles.pricingCardTitle} htmlFor="checkbox">
-          Choose your billing:
-        </label>
-        <span className={styles.checkboxToggler}>
-          Anual
-          <input type="checkbox" name="checkbox" id="checkbox" />
-          <span className={styles.toggler}>Anual</span>
-        </span>
-
-        <div className={styles.pricingCard}>
-          <div className={styles.pricingCardNormal}>
-            <div className={styles.pricingCardTitle}>Basic</div>
-          </div>
-
-          <div className={styles.pricingCardFeatured}>
-            <div className={styles.pricingCardTitle}>Basic</div>
-          </div>
-
-          <div className={styles.pricingCardNormal}>
-            <div className={styles.pricingCardTitle}>Basic</div>
-          </div>
+      <div className={styles.pricingCardTitle}>
+        Choose your billing:
+        <img src={Save_tag} className={styles.saveTag} />
         </div>
+
+      <div className={styles.pricingComponentButton}>
+        <div className={isActive ? styles.pricingComponentWhite : styles.pricingComponentBlue} onClick={toggleClass} >Anual</div>
+        <div className={isActive ? styles.pricingComponentBlue : styles.pricingComponentWhite} onClick={toggleClass}>Lunar</div>
       </div>
+
+
+              <div className={styles.pricingComponentSection}>
+                <div className={styles.pricingComponentBox}>
+                  <div className={styles.priceType}> Basic</div>
+                  <div className={styles.priceInfo}> Our basic plan with full G Suite integration is the perfect lightweight solution for you. 3-seat limit.</div>
+                  <div className={styles.pricePrice}> {isActive ? '$25' : '$35' }</div>
+                  <div className={styles.pricePeriod}> Per user, per month. Billed annually.</div>
+                  <div className={styles.priceTransparentButton}><span>Încearcă gratuit</span></div>
+                </div>
+                <div className={styles.pricingComponentBox}>
+                  <div className={styles.pricingComponentBoxFeautured}>Most popular</div>
+                  <div className={styles.priceType}> Organization</div>
+                  <div className={styles.priceInfo}>Our basic plan with full G Suite integration is the perfect lightweight solution for you. 3-seat limit.</div>
+                  <div className={styles.pricePrice}> {isActive ? '$25' : '$35' } </div>
+                  <div className={styles.pricePeriod}> Per user, per month. Billed annually.</div>
+                  <div className={styles.priceBlueButton}><span>Încearcă gratuit</span></div>
+                </div>
+                <div className={styles.pricingComponentBox}>
+                  <div className={styles.priceType}> Enterprise</div>
+                  <div className={styles.priceInfo}>Our basic plan with full G Suite integration is the perfect lightweight solution for you. 3-seat limit.</div>
+                  <div className={styles.pricePrice}> {isActive ? '$25' : '$35' } </div>
+                  <div className={styles.pricePeriod}> Per user, per month. Billed annually.</div>
+                  <div className={styles.priceTransparentButton}><span>Încearcă gratuit</span></div>
+                </div>
+              </div>
     </>
   );
 };
