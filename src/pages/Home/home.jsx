@@ -19,6 +19,8 @@ import Arrow from "../../assets/images/arrow.svg";
 import Plus from "../../assets/images/plus.svg";
 import QuestionsCircle from "../../assets/images/questionsCircle.png";
 import Save_tag from '../../assets/images/save_tag.png'
+import Footer1 from '../../assets/images/footer1.png'
+import Footer2 from '../../assets/images/footer2.png'
 
 //images Benefits
 import Benefits1 from "../../assets/images/Benefits/Benefits1.png";
@@ -406,6 +408,76 @@ const Home = () => {
                   <div className={styles.priceTransparentButton}><span>Încearcă gratuit</span></div>
                 </div>
               </div>
+
+            <div className={styles.priceButtons}>
+              <div className={styles.priceDarkBlueButton}>See & compare all plans</div>
+              <div className={styles.priceTransparentButton}>Request custom quote</div>
+            </div>
+
+
+            <div className={styles.footerManagerBusiness}>
+              <div className={styles.footerManagerSection1}>
+                <img src={Footer1}></img>
+
+              </div>
+              <div className={styles.footerManagerSectionMain}>
+                <div className={styles.footerManagerSectionMainTitle}>Managing business has never been so easy.</div>
+                <div className={styles.footerManagerSectionMainSubTitle}>Don't hesitate. Our experts are here to  show you how our application can streamline the way your team works.</div>
+                <div className={styles.discoverSliderButton}>
+              <div className={styles.discoverSliderButtonText}>
+                Începe trial-ul gratuit de 14 zile{" "}
+                <img src={Arrow} alt="Arrow" className={styles.arrowIcon} />
+              </div>
+              <Slider
+                styles={{
+                  track: {
+                    backgroundColor: "#018CF1",
+                    color: "#fff",
+                    fontSize: "0.8rem",
+                    borderRadius: "27.5px",
+                    width: "22rem",
+                    height: "55px",
+                    padding: "1.25rem 2.61rem 1.25rem 4.3rem",
+                    lineHeight: 1,
+                    letterSpacing: "1px",
+                  },
+                  active: {
+                    backgroundColor: "rgba(0,0,0,0.5)",
+                    visibility: "hidden",
+                  },
+                  thumb: {
+                    backgroundImage: `url("./img/round.svg")`,
+                    backgroundSize: "110px 60px",
+                    backgroundRepeat: "no-repeat",
+                    backgroundPosition: "center top",
+                    width: 50,
+                    height: 50,
+                    zIndex: 100,
+                  },
+                  disabled: {
+                    opacity: 1,
+                  },
+                }}
+                axis="x"
+                x={inputState.x}
+                xmin={0}
+                xmax={100}
+                onChange={setInputState}
+                onDragEnd={handleDragEnd}
+              ></Slider>
+            </div>
+            <div className={styles.footerManagerSectionMainSubTitle}>sau descarcă acum aplicația RaisisCRM</div>
+            <div className={styles.footerManagerSectionMainMobileStoreLogos}>
+              <img src={AppStore}/>
+              <img src={GooglePlay}/>
+            </div>
+              </div>
+              <div className={styles.footerManagerSection2}>
+              <img src={Footer2}></img>
+              </div>
+            </div>
+
+
     </>
   );
 };
