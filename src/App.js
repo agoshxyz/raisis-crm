@@ -1,15 +1,20 @@
 //packages
-import React, {useState} from "react";
-import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
 
 //components
 import { Navbar } from "./components/index";
 
 //pages
-import { Contact, ErrorPage, Home, Login, Price, Signup } from "./pages/index";
+import { Contact, Home, Login, Price, Signup } from "./pages/index";
 
 //styles
-import './App.css'
+import "./App.css";
 
 const App = () => {
   // const [showNav, setShowNav] = useState(true)

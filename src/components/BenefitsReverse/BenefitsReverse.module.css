@@ -63,9 +63,8 @@
   margin-right: 0.7rem;
 }
 
-
 @media (min-width: 961px) and (max-width: 1280px) {
-  .benefitsImage{
-      width: 590px;
+  .benefitsImage {
+    width: 590px;
   }
 }

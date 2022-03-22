@@ -22,10 +22,10 @@ import Save_tag from "../../assets/images/save_tag.png";
 import Footer1 from "../../assets/images/footer1.png";
 import Footer2 from "../../assets/images/footer2.png";
 import LogoFooter from "../../assets/images/logoFooter.png";
-import RaisisMed from '../../assets/images/raisisMed.png'
-import RaisisSoftware from '../../assets/images/raisisSoftware.png'
-import RaisisSoftwareWhite from '../../assets/images/raisisSoftwareWhite.png'
-import DefaultLogo from '../../assets/images/defaultLogo.png'
+import RaisisMed from "../../assets/images/raisisMed.png";
+import RaisisSoftware from "../../assets/images/raisisSoftware.png";
+import RaisisSoftwareWhite from "../../assets/images/raisisSoftwareWhite.png";
+import DefaultLogo from "../../assets/images/defaultLogo.png";
 
 //images Benefits
 import Benefits1 from "../../assets/images/Benefits/Benefits1.png";
@@ -317,40 +317,72 @@ const Home = () => {
           <div className={styles.faqQuestionsGroup}>
             <div className={styles.faqQuestionElement}>
               Lorem ipsum dolor sit ame
-              <img src={Plus} className={styles.faqQuestionPlusIcon} />
+              <img
+                src={Plus}
+                className={styles.faqQuestionPlusIcon}
+                alt="plus-icon"
+              />
             </div>
             <div className={styles.faqQuestionElement}>
               Lorem ipsum dolor sit ame
-              <img src={Plus} className={styles.faqQuestionPlusIcon} />
+              <img
+                src={Plus}
+                className={styles.faqQuestionPlusIcon}
+                alt="plus-icon"
+              />
             </div>
             <div className={styles.faqQuestionElement}>
               Lorem ipsum dolor sit ame
-              <img src={Plus} className={styles.faqQuestionPlusIcon} />
+              <img
+                src={Plus}
+                className={styles.faqQuestionPlusIcon}
+                alt="plus-icon"
+              />
             </div>
             <div className={styles.faqQuestionElement}>
               Lorem ipsum dolor sit ame
-              <img src={Plus} className={styles.faqQuestionPlusIcon} />
+              <img
+                src={Plus}
+                className={styles.faqQuestionPlusIcon}
+                alt="plus-icon"
+              />
             </div>
             <div className={styles.faqQuestionElement}>
               Lorem ipsum dolor sit ame
-              <img src={Plus} className={styles.faqQuestionPlusIcon} />
+              <img
+                src={Plus}
+                className={styles.faqQuestionPlusIcon}
+                alt="plus-icon"
+              />
             </div>
             <div className={styles.faqQuestionElement}>
               Lorem ipsum dolor sit ame
-              <img src={Plus} className={styles.faqQuestionPlusIcon} />
+              <img
+                src={Plus}
+                className={styles.faqQuestionPlusIcon}
+                alt="plus-icon"
+              />
             </div>
             <div className={styles.faqQuestionElement}>
               Lorem ipsum dolor sit ame
-              <img src={Plus} className={styles.faqQuestionPlusIcon} />
+              <img
+                src={Plus}
+                className={styles.faqQuestionPlusIcon}
+                alt="plus-icon"
+              />
             </div>
             <div className={styles.faqQuestionElement}>
               Lorem ipsum dolor sit ame
-              <img src={Plus} className={styles.faqQuestionPlusIcon} />
+              <img
+                src={Plus}
+                className={styles.faqQuestionPlusIcon}
+                alt="plus-icon"
+              />
             </div>
           </div>
 
           <div className={styles.faqQuestionBox}>
-            <img src={QuestionsCircle} width={48} height={48} />
+            <img src={QuestionsCircle} width={48} height={48} alt="plus-icon" />
             <div className={styles.faqQuestionBoxText}>
               Got questions about RaisisCRM benefits? We’re here to help.
             </div>
@@ -383,7 +415,7 @@ const Home = () => {
 
       <div className={styles.pricingCardTitle}>
         Choose your billing:
-        <img src={Save_tag} className={styles.saveTag} />
+        <img src={Save_tag} className={styles.saveTag} alt="save-tag" />
       </div>
 
       <div className={styles.pricingComponentButton}>
@@ -472,7 +504,7 @@ const Home = () => {
 
       <div className={styles.footerManagerBusiness}>
         <div className={styles.footerManagerSection1}>
-          <img src={Footer1}></img>
+          <img src={Footer1} alt="Footer1" />
         </div>
         <div className={styles.footerManagerSectionMain}>
           <div className={styles.footerManagerSectionMainTitle}>
@@ -529,12 +561,12 @@ const Home = () => {
             sau descarcă acum aplicația RaisisCRM
           </div>
           <div className={styles.footerManagerSectionMainMobileStoreLogos}>
-            <img src={AppStore} />
-            <img src={GooglePlay} />
+            <img src={AppStore} alt="AppStore" />
+            <img src={GooglePlay} alt="GooglePlay" />
           </div>
         </div>
         <div className={styles.footerManagerSection2}>
-          <img src={Footer2}></img>
+          <img src={Footer2} alt="Footer2" />
         </div>
       </div>
 
@@ -544,6 +576,7 @@ const Home = () => {
           width={65}
           height={50.13}
           className={styles.footerMainLogo}
+          alt="Logo Footer"
         />
         <div className={styles.footerMainComponents}>
           <div className={styles.footerMainStreamline}>
@@ -577,20 +610,27 @@ const Home = () => {
       </div>
 
       <div className={styles.footerLogos}>
-        <div className={styles.footerLogosSection1}>Discover other Raisis tools:</div>
+        <div className={styles.footerLogosSection1}>
+          Discover other Raisis tools:
+        </div>
         <div className={styles.footerLogosSection2}>
           <img src={RaisisMed} alt="RaisisMed" />
         </div>
         <div className={styles.footerLogosSection3}>
-        <img src={RaisisSoftware} alt="RaisisSoftware" />
+          <img src={RaisisSoftware} alt="RaisisSoftware" />
         </div>
       </div>
 
-
       <div className={styles.footerFooter}>
-        <div className={styles.footerFooterItem1}>Designed by <img src={DefaultLogo}/></div>
-        <div className={styles.footerFooterItem2}><img src={RaisisSoftwareWhite} /></div>
-        <div className={styles.footerFooterItem3}>© RaisisCRM 2021. All Rights Reserved</div>
+        <div className={styles.footerFooterItem1}>
+          Designed by <img src={DefaultLogo} alt="Default logo" />
+        </div>
+        <div className={styles.footerFooterItem2}>
+          <img src={RaisisSoftwareWhite} alt="RaisisSoftwareWhite" />
+        </div>
+        <div className={styles.footerFooterItem3}>
+          © RaisisCRM 2021. All Rights Reserved
+        </div>
       </div>
     </>
   );

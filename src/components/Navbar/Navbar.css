@@ -1,4 +1,4 @@
-.navbar{
+.navbar {
   width: 100%;
   /* max-width: 1600px; */
   height: 107.817px;
@@ -53,4 +53,11 @@
 
 .login-icon {
   margin-right: 0.7rem;
+}
+
+@media (min-width: 961px) and (max-width: 1280px) {
+  .nav-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 }

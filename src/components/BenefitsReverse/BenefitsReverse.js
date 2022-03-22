@@ -6,12 +6,8 @@ const BenefitsReverse = (props) => {
     <div className={styles.benefits}>
       <div className={styles.benefitsText}>
         <div className={styles.benefitsTitle}>{props.title}</div>
-        <div className={styles.benefitsSubTitle}>
-          {props.subTitle}
-        </div>
-        <div className={styles.benefitsDescription}>
-          {props.description}
-        </div>
+        <div className={styles.benefitsSubTitle}>{props.subTitle}</div>
+        <div className={styles.benefitsDescription}>{props.description}</div>
         <div className={styles.featureContainer}>
           <div className={styles.discoverCheckmark}>
             <img src={checkmark} alt="checkmark" className={styles.checkmark} />

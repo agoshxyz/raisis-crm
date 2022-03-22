@@ -898,59 +898,58 @@
     justify-content: center;
     align-items: center;
   }
-  .discoverImage{
+  .discoverImage {
     margin-top: 3rem;
   }
-  .discoverText{
+  .discoverText {
     margin-left: 3rem;
   }
-  .discoverSubTitle{
+  .discoverSubTitle {
     width: 90%;
   }
-  .discoverCheckmark:nth-child(3){
-    margin-top:2rem;
+  .discoverCheckmark:nth-child(3) {
+    margin-top: 2rem;
   }
-  .testimonalsContainer{
+  .testimonalsContainer {
     flex-wrap: wrap;
   }
-  .testimonalsSubTitle{
+  .testimonalsSubTitle {
     width: 50%;
   }
-  .testimonalsSection{
+  .testimonalsSection {
     height: 1300px;
   }
-  .faqBox{
+  .faqBox {
     flex-wrap: wrap;
   }
 
-.faqQuestionBox{
-  padding: 1rem;
-  margin-top: 2rem;
-  width: 33%;
-}
-.faqQuestionBoxText{
-  padding-bottom: 1rem;
-  padding-top: 1rem;
-}
+  .faqQuestionBox {
+    padding: 1rem;
+    margin-top: 2rem;
+    width: 33%;
+  }
+  .faqQuestionBoxText {
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+  }
 
-.pricingComponentSection{
-  flex-direction: column;
-}
+  .pricingComponentSection {
+    flex-direction: column;
+  }
 
-.pricingComponentBox:first-child{
-  margin-bottom: 7rem;
-  border-radius: 1rem;
-}
-.pricingComponentBox:nth-child(2){
-  margin-bottom: 2rem;
-  border-radius: 1rem;
-}
+  .pricingComponentBox:first-child {
+    margin-bottom: 7rem;
+    border-radius: 1rem;
+  }
+  .pricingComponentBox:nth-child(2) {
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+  }
 
-.pricingComponentBox:nth-child(3){
-  margin-bottom: 7rem;
-  border-radius: 1rem;
-}
-
+  .pricingComponentBox:nth-child(3) {
+    margin-bottom: 7rem;
+    border-radius: 1rem;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 960px) {
