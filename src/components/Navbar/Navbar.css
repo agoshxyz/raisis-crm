@@ -1,9 +1,9 @@
 .navbar {
   width: 100%;
-  /* max-width: 1600px; */
-  height: 107.817px;
+  /* max-width: 100rem; */
+  height: 6.7386rem;
   background-color: #fff;
-  top: 0px;
+  top: 0rem;
   z-index: 9999;
   position: fixed;
 }
@@ -11,7 +11,7 @@
 .nav-container {
   width: 100%;
   position: fixed;
-  max-width: 1210px;
+  max-width: 75.625rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -21,7 +21,7 @@
   transform: translateX(-50%);
   padding: 1.75rem 0 1.75rem 0;
   position: fixed;
-  top: 0px;
+  top: 0rem;
   z-index: 9999;
   /* height: 3.3rem; */
 }
@@ -36,12 +36,12 @@
 
 .nav-item {
   margin-left: 1.999rem;
-  font-size: 15px;
+  font-size: 0.9375rem;
   font-weight: 400;
   color: #293066;
   text-decoration: none;
   font-family: "Montserrat", sans-serif;
-  letter-spacing: 0.03px;
+  letter-spacing: 0.0019rem;
 }
 
 .navbar-btn {
@@ -55,7 +55,7 @@
   margin-right: 0.7rem;
 }
 
-@media (min-width: 961px) and (max-width: 1280px) {
+@media (min-width: 60.0625rem) and (max-width: 80rem) {
   .nav-container {
     padding-left: 2rem;
     padding-right: 2rem;

@@ -1,5 +1,5 @@
 .benefits {
-  max-width: 1210px;
+  max-width: 75.625rem;
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -7,7 +7,7 @@
 }
 .benefitsImage {
   transform: translate(-6.5%, -1%);
-  width: 785px;
+  width: 49.0625rem;
   height: auto;
 }
 .benefitsTitle {
@@ -16,24 +16,24 @@
   font-size: 0.9rem;
   text-transform: uppercase;
   font-weight: 800;
-  letter-spacing: 0.36px;
+  letter-spacing: 0.0225rem;
   text-transform: uppercase;
 }
 
 .benefitsSubTitle {
-  font-size: 45px;
+  font-size: 2.8125rem;
   font-weight: 700;
   color: #293066;
-  line-height: 54.86px;
-  width: 515px;
+  line-height: 3.4287rem;
+  width: 32.1875rem;
   margin-top: 1.59rem;
 }
 .benefitsDescription {
   font-weight: 400;
   margin-top: 1.55rem;
-  font-size: 18px;
-  letter-spacing: 0.1px;
-  line-height: 28.9px;
+  font-size: 1.125rem;
+  letter-spacing: 0.0063rem;
+  line-height: 1.8062rem;
   color: #7b88a8;
 }
 
@@ -46,11 +46,11 @@
   color: #293066;
   display: flex;
   align-items: center;
-  font-size: 15px;
+  font-size: 0.9375rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
   margin-right: 1.3rem;
-  letter-spacing: 0.01px;
+  letter-spacing: 0.0006rem;
 }
 
 .checkmark {
